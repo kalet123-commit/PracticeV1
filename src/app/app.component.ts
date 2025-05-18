@@ -1,13 +1,14 @@
 import {Component} from '@angular/core';
 import {TranslatePipe, TranslateService} from '@ngx-translate/core';
 import {MatToolbar, MatToolbarRow} from '@angular/material/toolbar';
-import {RouterLink, RouterLinkActive, RouterOutlet} from '@angular/router';
+
 import {MatIconButton} from '@angular/material/button';
 import {MatIcon} from '@angular/material/icon';
-import {MatSidenav, MatSidenavContainer, MatSidenavContent} from '@angular/material/sidenav';
+
 import {CommonModule} from '@angular/common';
 import {FooterComponent} from './public/components/footer/footer.component';
-import {MatListItem, MatNavList} from '@angular/material/list';
+
+import {SidenavComponent} from './public/components/side-navigation-bar/side-navigation-bar.component';
 
 /**
  * Root component of the Eventify application
@@ -25,16 +26,11 @@ import {MatListItem, MatNavList} from '@angular/material/list';
     MatToolbarRow,
     MatIconButton,
     MatIcon,
-    MatSidenavContainer,
-    MatSidenav,
-    MatSidenavContent,
-    RouterOutlet,
-    FooterComponent,
-    MatNavList,
-    RouterLink,
+
     TranslatePipe,
-    RouterLinkActive,
-    MatListItem
+
+    SidenavComponent,
+    FooterComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'

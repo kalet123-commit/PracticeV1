@@ -3,33 +3,21 @@
     <button mat-icon-button (click)="toggleSidenav()">
       <mat-icon>menu</mat-icon>
     </button>
+
     <span>{{ 'APP.TITLE' | translate }}</span>
+
     <span class="mat-spacer"></span>
-    <span class="certification">{{ 'APP.ISO_CERTIFICATION' | translate }}</span>
+
+    <span class="certification">
+      {{ 'APP.ISO_CERTIFICATION' | translate }}
+    </span>
   </mat-toolbar-row>
 </mat-toolbar>
 
-<mat-sidenav-container class="sidenav-container">
-  <mat-sidenav [opened]="isSidenavOpen" mode="over" role="navigation">
-    <div class="sidenav-content">
-      <div class="sidenav-header">
-        <h2>{{ 'APP.TITLE' | translate }}</h2>
-      </div>
-      <mat-nav-list>
-        @for (option of options; track option.path) {
-          <a mat-list-item [routerLink]="option.path" routerLinkActive="active-link"
-             (click)="isSidenavOpen = false">
-            {{ option.title | translate }}
-          </a>
-        }
-      </mat-nav-list>
-    </div>
-  </mat-sidenav>
+<app-sidenav
+  [isSidenavOpen]="isSidenavOpen"
+  [options]="options"
+  (sidenavClosed)="isSidenavOpen = false">
+</app-sidenav>
 
-  <mat-sidenav-content>
-    <div class="main-content">
-      <router-outlet/>
-    </div>
-    <app-footer></app-footer>
-  </mat-sidenav-content>
-</mat-sidenav-container>
+<app-footer/>

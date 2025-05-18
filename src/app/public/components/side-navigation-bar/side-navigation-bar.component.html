@@ -1,0 +1,24 @@
+<mat-sidenav-container>
+  <mat-sidenav
+    mode="side"
+    [(opened)]="isSidenavOpen"
+    (closedStart)="sidenavClosed.emit()">
+    <mat-nav-list>
+      <a
+        mat-list-item
+        *ngFor="let option of options"
+        [routerLink]="option.path">
+        {{ option.title }}
+      </a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <!-- Aquí puede ir <router-outlet> u otro contenido -->
+  </mat-sidenav-content>
+</mat-sidenav-container>
+<app-sidenav
+  [isSidenavOpen]="isSidenavOpen"
+  [options]="options"
+  (sidenavClosed)="isSidenavOpen = false">
+</app-sidenav>
