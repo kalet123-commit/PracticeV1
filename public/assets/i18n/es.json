@@ -1,0 +1,46 @@
+{
+  "APP": {
+    "TITLE": "Eventify",
+    "ISO_CERTIFICATION": "Certificado ISO 27001:2022"
+  },
+  "NAVIGATION": {
+    "HOME": "Inicio",
+    "RATING": "Calificación"
+  },
+  "HOME": {
+    "TITLE": "Inicio",
+    "WELCOME": "Bienvenido a eventify"
+  },
+  "EVENT": {
+    "CHECKED_IN": "Asistentes Registrados",
+    "AVERAGE_RATING": "Calificación Promedio",
+    "NONE_FOUND": "No se encontraron eventos registrados."
+  },
+  "RATING": {
+    "TITLE": "Añadir una calificación para el evento al que asistió",
+    "TICKET_ID": "Identificador de Boleto",
+    "RATING": "Calificación (1-5)",
+    "SUBMIT": "Calificar Evento",
+    "ERROR": {
+      "INVALID_TICKET": "Identificador de Boleto Inválido",
+      "NOT_ATTENDED": "Solo puede calificar eventos a los que ha asistido",
+      "ALREADY_RATED": "Ya ha calificado este evento"
+    },
+    "SUCCESS": "Evento calificado exitosamente"
+  },
+  "ERROR": {
+    "REQUIRED": "El campo {{field}} es obligatorio",
+    "INVALID": "El campo {{field}} es inválido"
+  },
+  "PAGE_NOT_FOUND": {
+    "TITLE": "Página No Encontrada",
+    "MESSAGE": "La ruta {{path}} no es válida.",
+    "HOME_BUTTON": "Inicio"
+  },
+  "FOOTER": {
+    "COPYRIGHT": "© 2025 Eventify. Todos los derechos reservados.",
+    "PRIVACY": "Política de Privacidad",
+    "TERMS": "Términos de Servicio",
+    "CONTACT": "Contáctenos"
+  }
+}

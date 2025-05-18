@@ -1,0 +1,46 @@
+{
+  "APP": {
+    "TITLE": "Eventify",
+    "ISO_CERTIFICATION": "ISO 27001:2022 certified"
+  },
+  "NAVIGATION": {
+    "HOME": "Home",
+    "RATING": "Rating"
+  },
+  "HOME": {
+    "TITLE": "Home",
+    "WELCOME": "Welcome to eventify"
+  },
+  "EVENT": {
+    "CHECKED_IN": "Checked-In Attendees",
+    "AVERAGE_RATING": "Average Rating",
+    "NONE_FOUND": "No registered events found."
+  },
+  "RATING": {
+    "TITLE": "Add a Rating for the Event you attended",
+    "TICKET_ID": "Ticket Identifier",
+    "RATING": "Rating (1-5)",
+    "SUBMIT": "Rate Event",
+    "ERROR": {
+      "INVALID_TICKET": "Invalid Ticket Identifier",
+      "NOT_ATTENDED": "You can only rate events you have attended to",
+      "ALREADY_RATED": "You have already rated this event"
+    },
+    "SUCCESS": "Event successfully rated"
+  },
+  "ERROR": {
+    "REQUIRED": "The field {{field}} is required",
+    "INVALID": "The field {{field}} is invalid"
+  },
+  "PAGE_NOT_FOUND": {
+    "TITLE": "Page Not Found",
+    "MESSAGE": "The path {{path}} is not valid.",
+    "HOME_BUTTON": "Home"
+  },
+  "FOOTER": {
+    "COPYRIGHT": "© 2025 Eventify. All rights reserved.",
+    "PRIVACY": "Privacy Policy",
+    "TERMS": "Terms of Service",
+    "CONTACT": "Contact Us"
+  }
+}
