@@ -1,6 +1,6 @@
-<mat-card>
+<mat-card aria-labelledby="event-title-{{event.id}}">
   <mat-card-header>
-    <mat-card-title>{{ event.name }}</mat-card-title>
+    <mat-card-title id="event-title-{{event.id}}">{{ event.name }}</mat-card-title>
   </mat-card-header>
 
   <mat-card-content>
@@ -8,11 +8,12 @@
   </mat-card-content>
 
   <mat-card-footer class="footer-stats">
-    <div>
-      <strong>Checked-In Attendees:</strong> {{ checkedInCount }}
+    <div aria-label="{{ 'EVENT.CHECKED_IN' | translate }}: {{ checkedInCount }}">
+      <strong>{{ 'EVENT.CHECKED_IN' | translate }}:</strong> {{ checkedInCount }}
     </div>
-    <div>
-      <strong>Average Rating:</strong> {{ averageRating }}
+    <div aria-label="{{ 'EVENT.AVERAGE_RATING' | translate }}: {{ averageRating }}">
+      <strong>{{ 'EVENT.AVERAGE_RATING' | translate }}:</strong> {{ averageRating }}
     </div>
   </mat-card-footer>
 </mat-card>
+

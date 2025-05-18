@@ -1,23 +1,30 @@
-<h2>Add a Rating for the Event you attended</h2>
 
-<form [formGroup]="form" (ngSubmit)="rateEvent()">
+<h2>{{ 'RATING.TITLE' | translate }}</h2>
+
+<form [formGroup]="form" (ngSubmit)="rateEvent()" aria-labelledby="rating-form-title">
   <div>
-    <label for="ticketId">Ticket Identifier</label>
-    <input id="ticketId" type="text" formControlName="ticketIdentifier" />
-    <div class="error" *ngIf="isInvalidControl(form, 'ticketIdentifier')">
+    <label for="ticketId">{{ 'RATING.TICKET_ID' | translate }}</label>
+    <input id="ticketId" type="text" formControlName="ticketIdentifier"
+           aria-required="true" aria-describedby="ticketId-error" />
+    <div id="ticketId-error" class="error" *ngIf="isInvalidControl(form, 'ticketIdentifier')">
       {{ errorMessagesForControl(form, 'ticketIdentifier') }}
     </div>
   </div>
 
   <div>
-    <label for="rating">Rating (1-5)</label>
-    <input id="rating" type="number" formControlName="rating" min="1" max="5" />
-    <div class="error" *ngIf="isInvalidControl(form, 'rating')">
+    <label for="rating">{{ 'RATING.RATING' | translate }}</label>
+    <input id="rating" type="number" formControlName="rating" min="1" max="5"
+           aria-required="true" aria-describedby="rating-error"
+           aria-valuemin="1" aria-valuemax="5" />
+    <div id="rating-error" class="error" *ngIf="isInvalidControl(form, 'rating')">
       {{ errorMessagesForControl(form, 'rating') }}
     </div>
   </div>
 
-  <button type="submit">Rate Event</button>
+  <button type="submit" aria-label="{{ 'RATING.SUBMIT' | translate }}">
+    {{ 'RATING.SUBMIT' | translate }}
+  </button>
 </form>
 
-<p *ngIf="message">{{ message }}</p>
+<p *ngIf="message" role="status" aria-live="polite">{{ message }}</p>
+`
