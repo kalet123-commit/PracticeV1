@@ -1,0 +1,9 @@
+<mat-grid-list cols="2" rowHeight="200px" gutterSize="16px">
+  @for (event of registeredEvents; track event.id) {
+    <mat-grid-tile>
+      <app-event-summary [event]="event" />
+    </mat-grid-tile>
+  } @empty {
+    <p>No registered events found.</p>
+  }
+</mat-grid-list>

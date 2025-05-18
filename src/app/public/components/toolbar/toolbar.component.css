@@ -1,0 +1,37 @@
+.toolbar {
+  display: flex;
+  align-items: center;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+button {
+  margin: 0 8px;
+  color: white;
+}
+
+.active-link {
+  font-weight: bold;
+  border-bottom: 2px solid white;
+}
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  height: 32px;
+  width: auto;
+}
+
+.certification {
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}

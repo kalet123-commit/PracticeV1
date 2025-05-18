@@ -1,0 +1,195 @@
+{
+  "ratings": [
+    {
+      "id": 1,
+      "attedeeId": 1,
+      "eventId": 1,
+      "rating": 4,
+      "ratedAt": "2025-05-01T10:00:00Z"
+    },
+    {
+      "id": 2,
+      "attedeeId": 2,
+      "eventId": 1,
+      "rating": 5,
+      "ratedAt": "2025-05-01T11:00:00Z"
+    },
+    {
+      "id": 3,
+      "attedeeId": 3,
+      "eventId": 2,
+      "rating": 3,
+      "ratedAt": "2025-05-02T15:00:00Z"
+    },
+    {
+      "id": 4,
+      "attedeeId": 4,
+      "eventId": 2,
+      "rating": 4,
+      "ratedAt": "2025-05-02T16:00:00Z"
+    },
+    {
+      "id": 5,
+      "attedeeId": 5,
+      "eventId": 3,
+      "rating": 2,
+      "ratedAt": "2025-05-03T12:00:00Z"
+    },
+    {
+      "id": 6,
+      "attedeeId": 6,
+      "eventId": 3,
+      "rating": 3,
+      "ratedAt": "2025-05-03T13:00:00Z"
+    },
+    {
+      "id": 7,
+      "attedeeId": 7,
+      "eventId": 4,
+      "rating": 5,
+      "ratedAt": "2025-05-04T14:00:00Z"
+    },
+    {
+      "id": 8,
+      "attedeeId": 8,
+      "eventId": 4,
+      "rating": 4,
+      "ratedAt": "2025-05-04T15:00:00Z"
+    },
+    {
+      "id": 9,
+      "attedeeId": 9,
+      "eventId": 5,
+      "rating": 5,
+      "ratedAt": "2025-05-05T11:00:00Z"
+    },
+    {
+      "id": 10,
+      "attedeeId": 10,
+      "eventId": 5,
+      "rating": 5,
+      "ratedAt": "2025-05-05T12:00:00Z"
+    },
+    {
+      "id": 11,
+      "attendeeId": 1,
+      "eventId": 1,
+      "rating": 3,
+      "ratedAt": "2025-05-18T17:42:27.825Z"
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "name": "Angular Connect",
+      "description": "A conference about Angular and frontend development.",
+      "scheduleAt": "2025-06-01T09:00:00Z"
+    },
+    {
+      "id": 2,
+      "name": "AI & Machine Learning Summit",
+      "description": "Deep dive into AI trends and applications.",
+      "scheduleAt": "2025-06-15T10:00:00Z"
+    },
+    {
+      "id": 3,
+      "name": "Cloud Expo Latin America",
+      "description": "Latest innovations in cloud computing, DevOps, and SaaS.",
+      "scheduleAt": "2025-07-01T09:30:00Z"
+    },
+    {
+      "id": 4,
+      "name": "Cybersecurity Essentials",
+      "description": "Protect your digital assets with the latest tools and strategies.",
+      "scheduleAt": "2025-07-20T10:00:00Z"
+    },
+    {
+      "id": 5,
+      "name": "Productivity Hacks 2025",
+      "description": "Boost your workflow with modern productivity frameworks.",
+      "scheduleAt": "2025-08-10T08:00:00Z"
+    }
+  ],
+  "attendees": [
+    {
+      "id": 1,
+      "firstName": "Alice",
+      "lastName": "Johnson",
+      "eventId": 1,
+      "ticketIdentifier": 101,
+      "checkedInAt": "2025-06-01T08:45:00Z"
+    },
+    {
+      "id": 2,
+      "firstName": "Bob",
+      "lastName": "Smith",
+      "eventId": 1,
+      "ticketIdentifier": 102,
+      "checkedInAt": null
+    },
+    {
+      "id": 3,
+      "firstName": "Charlie",
+      "lastName": "Davis",
+      "eventId": 2,
+      "ticketIdentifier": 201,
+      "checkedInAt": "2025-06-15T09:30:00Z"
+    },
+    {
+      "id": 4,
+      "firstName": "Diana",
+      "lastName": "Lopez",
+      "eventId": 2,
+      "ticketIdentifier": 202,
+      "checkedInAt": null
+    },
+    {
+      "id": 5,
+      "firstName": "Eric",
+      "lastName": "Mendoza",
+      "eventId": 3,
+      "ticketIdentifier": 301,
+      "checkedInAt": "2025-07-01T09:10:00Z"
+    },
+    {
+      "id": 6,
+      "firstName": "Fernanda",
+      "lastName": "Reyes",
+      "eventId": 3,
+      "ticketIdentifier": 302,
+      "checkedInAt": ""
+    },
+    {
+      "id": 7,
+      "firstName": "Gustavo",
+      "lastName": "Ramírez",
+      "eventId": 4,
+      "ticketIdentifier": 401,
+      "checkedInAt": "2025-07-20T09:55:00Z"
+    },
+    {
+      "id": 8,
+      "firstName": "Hanna",
+      "lastName": "Torres",
+      "eventId": 4,
+      "ticketIdentifier": 402,
+      "checkedInAt": "2025-07-20T10:05:00Z"
+    },
+    {
+      "id": 9,
+      "firstName": "Iván",
+      "lastName": "Castro",
+      "eventId": 5,
+      "ticketIdentifier": 501,
+      "checkedInAt": "2025-08-10T07:50:00Z"
+    },
+    {
+      "id": 10,
+      "firstName": "Julia",
+      "lastName": "Morales",
+      "eventId": 5,
+      "ticketIdentifier": 502,
+      "checkedInAt": null
+    }
+  ]
+}
