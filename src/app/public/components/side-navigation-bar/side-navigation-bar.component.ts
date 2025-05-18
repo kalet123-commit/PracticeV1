@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
-import { RouterModule } from '@angular/router';
-
+import { RouterModule, RouterOutlet } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 
 /**
  * Side navigation component for the application
@@ -21,10 +21,12 @@ import { RouterModule } from '@angular/router';
     MatSidenavModule,
     MatListModule,
     MatIconModule,
-    RouterModule
+    RouterModule,
+    RouterOutlet,
+    TranslateModule
   ],
-  templateUrl: './sidenav.component.html',
-  styleUrls: ['./sidenav.component.css']
+  templateUrl: './side-navigation-bar.component.html',
+  styleUrls: ['./side-navigation-bar.component.css']
 })
 export class SidenavComponent {
   /** Determines whether the sidenav is open or closed */
